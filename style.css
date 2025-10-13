@@ -113,3 +113,80 @@ label{
     height: 50%;
     margin-top: 2rem;
 }
+
+.about h1::after{
+    content: "";
+    position: absolute;
+    bottom: -120px;
+    left: 48%; 
+    width: 5%;
+    height: 3px;
+    background: #00FFFF;
+    background: linear-gradient(90deg, #00FFFF 0%, #FF00FF 100%); 
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.card{
+    border: 1px solid #00FFFF;
+    border-radius: 5px;
+    padding: 4rem 2rem 2rem 2rem;
+    color: #fff;
+    height: 26vh;
+    width: 19vw;
+    background-color: #1c213d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card i{    
+    padding: 1rem;
+    border: none;
+    border-radius: 48%;
+    background: #0a2631;
+}
+
+.users h1{
+    position: relative;
+}
+
+img{
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.users h1::after{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 48%; 
+    width: 5%;
+    height: 3px;
+    background: #00FFFF;
+    background: linear-gradient(90deg, #00FFFF 0%, #FF00FF 100%); 
+}
+
+.game{
+    width: 20%;
+    text-align: center;
+    border: 1px solid red;
+    padding: 8px;
+    border-radius: 20px;
+    color: red;
+    margin-top: 7px;
+    background-color: #422137;
+}
+
+.game h1{
+    margin: 0.5rem 0rem;
+}
