@@ -1,16 +1,15 @@
-function filter(){
-    const filter = document.getElementById("filter").value.toLowerCase;
-
-    const list = document.getElementById('list');
-    const items = document.querySelectorAll('.item');
+function filter() {
+    let filter = document.getElementById("filter").value.toLowerCase();
+    let list = document.querySelectorAll(".card");
 
     for (let i = 0; i < list.length; i++) {
-        const item = items[i];
-        const itemName = item.textContent.toLowerCase();
-        if (itemName.includes(filter)) {
-            item.style.display = '';
+        let card = list[i];
+        let item = card.querySelector(".game").textContent.toLowerCase();
+
+        if (item.includes(filter)) {
+            card.style.display = "";
         } else {
-            item.style.display = 'none';
+            card.style.display = "none"; 
         }
     }
 }

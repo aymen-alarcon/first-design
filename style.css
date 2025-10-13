@@ -273,3 +273,22 @@ form div{
 form input{
     width: 90%;
 }
+
+.profile-container{
+    color: #fff;
+    padding: 3rem;
+    margin: 5rem;
+    border: 1px solid #00FFFF;
+    border-radius: 10px;
+    background-color: #062231;
+}
+
+.profile-pictures{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.profile-container .description{
+    margin: 5rem;
+}
