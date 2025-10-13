@@ -46,7 +46,7 @@ section{
     justify-content: center;
     align-items: center;
     padding: 5rem;
-    background: linear-gradient(90deg, #0A0E27 0%, #FF00FF 40%,  #0A0E27 100%);
+    background: linear-gradient(90deg, #2B2358 0%, #0C0E29 100%);
 }
 
 h1{
@@ -102,7 +102,7 @@ label{
 .search-panel{
     border: 1px solid #00FFFF;
     border-radius: 5px;
-    margin-inline: 20rem;
+    margin-inline: 10rem;
     padding: 1rem 0px 3rem 0px;
     margin-bottom: 5rem;
     background-color: #1c213d;
@@ -113,11 +113,13 @@ label{
     height: 50%;
     margin-top: 2rem;
 }
-
+.about h1{
+    position: relative;
+}
 .about h1::after{
     content: "";
     position: absolute;
-    bottom: -120px;
+    bottom: -15px;
     left: 48%; 
     width: 5%;
     height: 3px;
