@@ -8,14 +8,27 @@
     <title>Players</title>
 </head>
 <body>
+    <div id="modal">
+        <form id="form" action="index.html?connection_successful">
+            <label for="">Username</label>
+            <input type="text" placeholder="Aymen">
+            <label for="">Password</label>
+            <input type="password" placeholder="dyal Instagram">
+            <a href="">forgotten Your Password!!!</a>
+            <div class="btns">
+                <button type="submit">Connexion</button>
+                <button onclick="closemodal()">close</button>
+            </div>
+        </form>
+    </div>
     <header>
         <h2 style="margin: 0px;">TeamUp.<span style="color: #00ffff">gg</span></h2>
         <div>
             <a href="index.html">Acceuil</a>
-            <a href="">Comment ça marche</a>
+            <a href="about.html">Comment ça marche</a>
             <a href="players.html">Joueurs</a>
             <a href="community.html">Communauté</a>
-            <button>Connexion</button>
+            <button onclick="showmodal()">Connexion</button>
         </div>
     </header>
     <div class="users">
@@ -28,21 +41,25 @@
                 <option value="CS2">CS2</option>
             </select>
         </div>
-        <center>
-            <form action="">
-                    <label for="">Game</label>
-                    <input type="text" placeholder="Cuisine">
-                    <label for="">Team Name</label>
-                    <input type="text" placeholder="Tigers">
-                <div>
-                    <label for="">Role</label>
-                    <input type="text" placeholder="admin">
-                    <label for="">Niveau</label>
-                    <input type="text" placeholder="Gold">
+        <div class="search-panel">
+            <h1>Recherche ton équipe idéale</h1>
+            <div class="container">
+                <div class="input">
+                    <label for="">Jeu</label>
+                    <input type="text" placeholder="Sélectionne un jeu">
                 </div>
-                <button style="width: 30%; margin-left: 35%;">Submit</button>
-            </form>
-        </center>
+                <div class="input">
+                    <label for="">Niveau</label>
+                    <input type="text" placeholder="Tous les niveaux">
+                </div>
+                <div class="input">
+                    <label for="">Role</label>
+                    <input type="text" placeholder="Tous les rôles">
+                </div>
+                <button>Rechercher</button>
+            </div>
+        </div>
+
         <div class="cards">
             <div class="card">
                 <div class="profile-picture">

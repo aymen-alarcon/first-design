@@ -49,11 +49,71 @@ section{
     background: linear-gradient(90deg, #2B2358 0%, #0C0E29 100%);
 }
 
-h1{
+h1, h3{
     color: #ffff;
-    color: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 255, 255, 1) 100%);
     text-align: center;
+    background: linear-gradient(90deg, #fff 0%, #00FFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
+
+.headers-joueurs{
+    display: flex;
+    gap: 10px;
+}
+
+.card{
+    position: relative;
+}
+
+#modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.27);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.2px);
+    -webkit-backdrop-filter: blur(12.2px);
+}
+
+#form{
+    transition: 0.3s step-end;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.online-indicator{
+    background-color: green;
+    width: 10px;
+    border: 3px solid black;
+    position: absolute;
+    border-radius: 50%;
+    top: 3.2rem;
+    left: 12rem;
+    z-index: 99;
+    height: 10px;
+    filter: drop-shadow(2px 10px 15px green);
+}
+.offline-indicator{
+    background-color: gray;
+    width: 10px;
+    border: 3px solid black;
+    position: absolute;
+    border-radius: 50%;
+    top: 3.2rem;
+    left: 12rem;
+    z-index: 99;
+    height: 10px;
+    filter: drop-shadow(2px 10px 15px gray);
+}
+
 
 section p{
     color: #B0B0B0;
@@ -82,7 +142,7 @@ section p{
     color: #fff;
 }
 
-input[type= "text"]{
+input[type= "text"], input[type = "password"]{
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #00FFFF;
@@ -139,7 +199,7 @@ label{
     border-radius: 5px;
     padding: 4rem 2rem 2rem 2rem;
     color: #fff;
-    height: 26vh;
+    height: 40vh;
     width: 19vw;
     background-color: #1c213d;
     display: flex;
@@ -283,11 +343,13 @@ form input{
     background-color: #062231;
 }
 
-.profile-pictures{
+.profile-picture{
     display: flex;
     gap: 15px;
     margin-bottom: 10px;
-}
+    filter: drop-shadow(2px 3px 11px rgba(0, 255, 255, 0.4));
+    border: 3px solid #00FFFF;
+    border-radius: 50%;}
 
 .profile-container .description{
     margin: 5rem;

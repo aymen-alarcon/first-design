@@ -13,3 +13,18 @@ function filter() {
         }
     }
 }
+
+function showmodal() {
+    let modal = document.getElementById("modal");
+    let form = document.getElementById("form");
+    form.style.backgroundColor = "#0A0E27";
+    modal.style.display = "flex";
+    modal.style.justifyContent = "center";
+    modal.style.alignItems = "center";
+    modal.style.padding = "2rem";
+}
+function hidemodal() {
+    let modal = document.getElementById("modal");
+
+    modal.style.display = "none"
+}
