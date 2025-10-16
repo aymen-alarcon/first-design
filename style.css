@@ -63,10 +63,6 @@ h1, h3{
     gap: 10px;
 }
 
-.card{
-    position: relative;
-}
-
 #modal{
     display: none;
     width: 100%;
@@ -95,8 +91,8 @@ h1, h3{
     border: 3px solid black;
     position: absolute;
     border-radius: 50%;
-    top: 3.2rem;
-    left: 12rem;
+    top: 0rem;
+    left: 3rem;
     z-index: 99;
     height: 10px;
     filter: drop-shadow(2px 10px 15px green);
@@ -107,8 +103,8 @@ h1, h3{
     border: 3px solid black;
     position: absolute;
     border-radius: 50%;
-    top: 3.2rem;
-    left: 12rem;
+    top: 0rem;
+    left: 3rem;
     z-index: 99;
     height: 10px;
     filter: drop-shadow(2px 10px 15px gray);
@@ -195,6 +191,7 @@ label{
 }
 
 .card{
+    position: relative;
     border: 1px solid #00FFFF;
     border-radius: 5px;
     padding: 4rem 2rem 2rem 2rem;
@@ -360,4 +357,9 @@ form input{
     justify-content: center;
     align-items: center;
     padding: 2rem;
+}
+
+.profile-pictures{
+    display: flex;
+    gap: 10px;
 }
