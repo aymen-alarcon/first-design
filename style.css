@@ -138,13 +138,14 @@ section p{
     color: #fff;
 }
 
-input[type= "text"], input[type = "password"]{
+input[type= "text"], input[type = "password"], textarea{
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #00FFFF;
     margin: 10px 10px 0px 0px;
     background-color: #0A0E27;
 }
+
 
 label{
     color:#00FFFF;
@@ -153,6 +154,7 @@ label{
 .input{
     display: flex;
     flex-direction: column;   
+    width: 25%;
 }
 
 .search-panel{
@@ -357,6 +359,11 @@ form input{
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    width: 25vw;
+    border: 1px solid #00ffff;
+    margin: 2rem;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .profile-pictures{
